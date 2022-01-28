@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,Derek Adler,KY,6.00,Carpet,600,2.25,2.10,1350.00,1260.00,156.60,2766.60

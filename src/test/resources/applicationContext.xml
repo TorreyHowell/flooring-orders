@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="io" class="com.th.flooringmastery.ui.UserIOImpl"/>
+    <bean id="productDao" class="com.th.flooringmastery.dao.ProductDaoImpl"/>
+    <bean id="orderDao" class="com.th.flooringmastery.dao.OrderDaoImpl">
+        <constructor-arg value="TestOrders"/>
+        <constructor-arg ref="productDao"/>
+        <constructor-arg ref="taxDao"/>
+    </bean>
+    <bean id="orderDaoStub" class="com.th.flooringmastery.service.OrderDaoStubImpl"/>
+    
+    <bean id="taxDao" class="com.th.flooringmastery.dao.TaxDaoImpl"/>
+    <bean id="view" class="com.th.flooringmastery.ui.View">
+        <constructor-arg ref="io"/>
+    </bean>
+    <bean id="service" class="com.th.flooringmastery.service.ServiceImpl">
+        <constructor-arg ref="productDao"/>
+        <constructor-arg ref="taxDao"/>
+        <constructor-arg ref="orderDaoStub"/>
+    </bean>
+    <bean id="controller" class="com.th.flooringmastery.controller.Controller">
+        <constructor-arg ref="view"/>
+        <constructor-arg ref="service"/>
+    </bean>
+    
+
+
+
+</beans>

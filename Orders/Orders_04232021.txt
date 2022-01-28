@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+7,"McDowell Construction, Inc.",TX,4.45,Wood,1200.5,5.15,4.75,6182.58,5702.38,528.88,12413.84

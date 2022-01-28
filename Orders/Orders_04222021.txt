@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+4,David Ljubi,CA,25.00,Wood,1000,5.15,4.75,5150.00,4750.00,2475.00,12375.00
+5,David McDowell,CA,25.00,Tile,1500,3.50,4.15,5250.00,6225.00,2868.75,14343.75
